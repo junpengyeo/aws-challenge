@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Language" content="en" />
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#4188c9">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+    <!-- Generated: 2019-04-04 16:55:45 +0200 -->
+    <title>Homepage - tabler.github.io - a responsive, flat and full featured admin template</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext">
+    <script src="./assets/js/require.min.js"></script>
+    <script>
+      requirejs.config({
+          baseUrl: '.'
+      });
+    </script>
+    <!-- Dashboard Core -->
+    <link href="./assets/css/dashboard.css" rel="stylesheet" />
+    <script src="./assets/js/dashboard.js"></script>
+    <!-- c3.js Charts Plugin -->
+    <link href="./assets/plugins/charts-c3/plugin.css" rel="stylesheet" />
+    <script src="./assets/plugins/charts-c3/plugin.js"></script>
+    <!-- Google Maps Plugin -->
+    <link href="./assets/plugins/maps-google/plugin.css" rel="stylesheet" />
+    <script src="./assets/plugins/maps-google/plugin.js"></script>
+    <!-- Input Mask Plugin -->
+    <script src="./assets/plugins/input-mask/plugin.js"></script>
+    <!-- Datatables Plugin -->
+    <script src="./assets/plugins/datatables/plugin.js"></script>
+  </head>
+  <body class="">
+    <div class="page">
+      <div class="flex-fill">
+        <div class="header py-4">
+          <div class="container">
+            <div class="d-flex">
+              <a class="header-brand" href="./savings.html">
+                <img src="./assets/demo/brand/dbs.png" class="header-brand-img" alt="tabler logo">
+              </a>
+              <div class="col-lg align-self-center">
+                <ul class="nav nav-tabs border-0 flex-column flex-lg-row">
+                  <li class="nav-item">
+                    <a class="text-muted" href="./article%20persona.html">
+                      Investment
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="text-muted nav-link active" href="./savings.html">
+                      Savings
+                    </a>
+                  </li>
+                </ul>
+              </div>    
+              <div class="d-flex order-lg-2 ml-auto">
+                <div class="dropdown d-none d-md-flex">
+                  <a class="nav-link icon">
+                    <i class="fe fe-bell"></i>
+                  </a>
+                </div>
+                <div class="dropdown">
+                  <a href="#" class="nav-link pr-0 leading-none" data-toggle="dropdown">
+                    <span class="avatar" style="background-image: url(./assets/demo/faces/female/19.jpg)"></span>
+                    <span class="ml-2 d-none d-lg-block">
+                      <span class="text-default">Phoebe Mcarthur</span>
+                      <small class="text-muted d-block mt-1">My Account</small>
+                    </span>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                    <a class="dropdown-item" href="#">
+                      <i class="dropdown-icon fe fe-user"></i> Profile
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <i class="dropdown-icon fe fe-settings"></i> Settings
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <span class="float-right"><span class="badge badge-primary">6</span></span>
+                      <i class="dropdown-icon fe fe-mail"></i> Inbox
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <i class="dropdown-icon fe fe-send"></i> Message
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+                      <i class="dropdown-icon fe fe-help-circle"></i> Need help?
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <i class="dropdown-icon fe fe-log-out"></i> Sign out
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="header-toggler d-lg-none ml-3 ml-lg-0" data-toggle="collapse" data-target="#headerMenuCollapse">
+                <span class="header-toggler-icon"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="header collapse d-lg-flex p-0" id="headerMenuCollapse">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-3 ml-auto">
+                <form class="input-icon my-3 my-lg-0">
+                  <input type="search" class="form-control header-search" placeholder="Search&hellip;" tabindex="1">
+                  <div class="input-icon-addon">
+                    <i class="fe fe-search"></i>
+                  </div>
+                </form>
+              </div>
+              <div class="col-lg order-lg-first">
+                <ul class="nav nav-tabs border-0 flex-column flex-lg-row">
+                  <li class="nav-item">
+                    <a href="./savings.html" class="nav-link active"><i class="fe fe-home"></i> Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link" data-toggle="dropdown"><i class="fe fe-bar-chart-2"></i> Trade</a>
+                    <div class="dropdown-menu dropdown-menu-arrow">
+                      <a href="#" class="dropdown-item ">Place Order</a>
+                      <a href="#" class="dropdown-item ">Order Status</a>
+                      <a href="#" class="dropdown-item ">Watchlist</a>
+                      <a href="#" class="dropdown-item ">Top 20</a>
+                      <a href="#" class="dropdown-item ">Advanced Market Data</a>
+                      <a href="#" class="dropdown-item ">Transaction Screener</a>
+                      <a href="#" class="dropdown-item ">Commission Calculator</a>
+                      <a href="#" class="dropdown-item ">Trade Overview</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a href="javascript:void(0)" class="nav-link" data-toggle="dropdown"><i class="fe fe-globe"></i> Market</a>
+                    <div class="dropdown-menu dropdown-menu-arrow">
+                      <a href="#" class="dropdown-item ">News</a>
+                      <a href="#" class="dropdown-item ">Insights</a>
+                      <a href="#" class="dropdown-item ">Reports</a>
+                      <a href="#" class="dropdown-item ">Stock Screener</a>
+                      <a href="#" class="dropdown-item ">Stock Search</a>
+                      <a href="#" class="dropdown-item ">Stock Comparer</a>
+                      <a href="#" class="dropdown-item ">Charting</a>
+                      <a href="#" class="dropdown-item ">Markets Overview</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a href="javascript:void(0)" class="nav-link" data-toggle="dropdown"><i class="fe fe-compass"></i> Portfolio</a>
+                    <div class="dropdown-menu dropdown-menu-arrow">
+                      <a href="#" class="dropdown-item ">Balances</a>
+                      <a href="#" class="dropdown-item ">Holdings</a>
+                      <a href="#" class="dropdown-item ">Outstanding Contracts</a>
+                      <a href="#" class="dropdown-item ">Portfolio (SGX)</a>
+                      <a href="#" class="dropdown-item ">Custom Portfolio</a>
+                      <a href="#" class="dropdown-item ">History</a>
+                      <a href="#" class="dropdown-item ">eStatements</a>
+                      <a href="#" class="dropdown-item ">Account Management</a>
+                      <a href="#" class="dropdown-item ">My Account Overview</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a href="javascript:void(0)" class="nav-link" data-toggle="dropdown"><i class="fe fe-briefcase"></i> IPO</a>
+                    <div class="dropdown-menu dropdown-menu-arrow">
+                      <a href="#" class="dropdown-item ">Apply for IPO</a>
+                      <a href="#" class="dropdown-item ">Status</a>
+                      <a href="#" class="dropdown-item ">Previous Applications</a>
+                      <a href="#" class="dropdown-item ">Previous Online Offerings</a>
+                      <a href="#" class="dropdown-item ">Application Terms & Conditions</a>
+                      <a href="#" class="dropdown-item ">General Terms & Disclaimers</a>
+                      <a href="#" class="dropdown-item ">FAQ</a>
+                      <a href="#" class="dropdown-item ">IPO Overview</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a href="javascript:void(0)" class="nav-link" data-toggle="dropdown"><i class="fe fe-folder"></i> Resources</a>
+                    <div class="dropdown-menu dropdown-menu-arrow">
+                      <a href="#" class="dropdown-item ">Types of Accounts</a>
+                      <a href="#" class="dropdown-item ">Fee Schedules</a>
+                      <a href="#" class="dropdown-item ">Investment Products</a>
+                      <a href="#" class="dropdown-item ">Important Notices</a>
+                      <a href="#" class="dropdown-item ">Promotions</a>
+                      <a href="#" class="dropdown-item ">Events and Seminars</a>
+                      <a href="#" class="dropdown-item ">Forms</a>
+                      <a href="#" class="dropdown-item ">FAQ & Glossary</a>
+                      <a href="#" class="dropdown-item ">Resources Overview</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="my-3 my-md-5">
+          <div class="container">
+            <div class="page-header">
+              <h1 class="page-title">
+                August Dashboard
+              </h1>
+            </div>
+            <div class="row row-cards">
+              <div class="col-6 col-sm-4 col-lg-4">
+                <div class="card">
+                  <div class="card-body p-3 text-center">
+                    <div class="h1 m-0">S$546.76</div>
+                    <div class="text-muted mb-4">REMAINING BUDGET</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-4 col-lg-4">
+                <div class="card">
+                  <div class="card-body p-3 text-center">
+                    <div class="h1 m-0">S$1453.24</div>
+                    <div class="text-muted mb-4">TOTAL EXPENDITURE</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-4 col-lg-4">
+                <div class="card">
+                  <div class="card-body p-3 text-center">
+                    <div class="h1 m-0">S$145.20</div>
+                    <div class="text-muted mb-4">PASSIVE INVESTMENT</div>
+                  </div>
+                </div>
+              </div>
+            <div class="col-lg-8 col-md-6">
+              <div class="card">
+                <div class="card-header">
+                  <h2 class="card-title">Transaction Numbers</h2>
+                </div>
+                <div class="card-body">
+                  <div id="chart-tasks" style="height: 15rem"></div>
+                </div>
+                <div class="card-tabs card-tabs-bottom">
+                  <a href="javascript:void(0)" class="card-tabs-item text-center active">
+                    <h3 class="mb-1">16</h3>
+                    <div class="text-muted-dark">Shopping</div>
+                  </a>
+                  <a href="javascript:void(0)" class="card-tabs-item text-center">
+                    <h3 class="mb-1">6</h3>
+                    <div class="text-muted-dark">Dining</div>
+                  </a>
+                  <a href="javascript:void(0)" class="card-tabs-item text-center">
+                    <h3 class="mb-1">2</h3>
+                    <div class="text-muted-dark">Transportation</div>
+                  </a>
+                  <a href="javascript:void(0)" class="card-tabs-item text-center">
+                    <h3 class="mb-1">1</h3>
+                    <div class="text-muted-dark">Entertainment</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+              <script>
+                require(['c3', 'jquery'], function(c3, $) {
+                  $(document).ready(function(){
+                    var chart = c3.generate({
+                      bindto: '#chart-tasks', // id of chart wrapper
+                      data: {
+                        columns: [
+                            // each columns data
+                          ['data1', 0, 0, 1, 2, 21, 9, 12, 10, 31, 13, 30, 10, 12, 6, 4, 3, 16],
+                          ['data2', 0, 0, 1, 2, 7, 5, 6, 8, 3, 7, 9, 5, 6, 3, 2, 2, 6],
+                          ['data3', 0, 0, 1, 0, 2, 0, 1, 0, 2, 3, 0, 2, 3, 2, 1, 0, 2],
+                          ['data4', 0, 0, 1, 0, 2, 0, 1, 0, 2, 3, 0, 2, 3, 2, 1, 0, 1]
+
+                        ],
+                        classes: {
+                          data1: 'filled',
+                          data2: 'filled',
+                          data3: 'filled',
+                          data4: 'filled',
+
+                        },
+                        type: 'line', // default type of chart
+                        groups: [
+                          [ 'data1', 'data2', 'data3', 'data4']
+                        ],
+                        colors: {
+                        },
+                        names: {
+                            // name of each serie
+                          'data1': 'Shopping',
+                          'data2': 'Dining',
+                          'data3': 'Transportation',
+                          'data4': 'Entertainment',
+                        }
+                      },
+                      axis: {
+                        y: {
+                          padding: {
+                            bottom: 0,
+                          },
+                          show: false,
+                            tick: {
+                            outer: false
+                          }
+                        },
+                        x: {
+                          padding: {
+                            left: 0,
+                            right: 0
+                          },
+                          show: false
+                        }
+                      },
+                      legend: {
+                        position: 'inset',
+                        padding: 0,
+                        inset: {
+                                    anchor: 'top-left',
+                          x: 20,
+                          y: 8,
+                          step: 10
+                        }
+                      },
+                      tooltip: {
+                        format: {
+                          title: function (x) {
+                            return '';
+                          }
+                        }
+                      },
+                      padding: {
+                        bottom: 0,
+                        left: -1,
+                        right: -1
+                      },
+                      point: {
+                        show: false
+                      }
+                    });
+                  });
+                });
+              </script>
+            <div class="col-sm-6 col-lg-4">
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title">Expenditure Breakdown</h3>
+                  </div>
+                  <div class="card-body">
+                    <div id="chart-donut" style="height: 20rem"></div>
+                  </div>
+                </div>
+                <script>
+                  require(['c3', 'jquery'], function(c3, $) {
+                  	$(document).ready(function(){
+                  		var chart = c3.generate({
+                  			bindto: '#chart-donut', // id of chart wrapper
+                  			data: {
+                  				columns: [
+                  				    // each columns data
+                  					['data1', 69.3],
+                  					['data2', 17.8],
+                            ['data3', 8.3],
+                            ['data4', 0.5],
+                            ['data5', 4.1],
+                            
+                  				],
+                  				type: 'donut', // default type of chart
+                  				colors: {
+                  				},
+                  				names: {
+                  				    // name of each serie
+                  					'data1': 'Shopping',
+                  					'data2': 'Dining',
+                  					'data3': 'Transportation',
+                  					'data4': 'Other',
+                  					'data5': 'Entertainment & Leisure',
+                  				}
+                  			},
+                  			axis: {
+                  			},
+                  			legend: {
+                                  show: false, //hide legend
+                  			},
+                  			padding: {
+                  				bottom: 0,
+                  				top: 0
+                  			},
+                  		});
+                  	});
+                  });
+                </script>
+            </div>
+            <div class="row row-cards row-deck">
+              <div class="col-md-6 col-lg-12">
+                <div class="row">
+                  <div class="col-sm-6 col-lg-6">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="card-value float-right text-green">+1.63%</div>
+                        <h3 class="mb-1">Asia Portfolio</h3>
+                        <div class="text-muted">SG ETFs</div>
+                      </div>
+                      <div class="card-chart-bg">
+                        <div id="chart-bg-users-1" style="height: 100%"></div>
+                      </div>
+                    </div>
+                    <script>
+                      require(['c3', 'jquery'], function (c3, $) {
+                      	$(document).ready(function() {
+                      		var chart = c3.generate({
+                      			bindto: '#chart-bg-users-1',
+                      			padding: {
+                      				bottom: -10,
+                      				left: -1,
+                      				right: -1
+                      			},
+                      			data: {
+                      				names: {
+                      					data1: 'Value'
+                      				},
+                      				columns: [
+                      					['data1', 30, 40, 10, 40, 12, 22, 40]
+                      				],
+                      				type: 'area'
+                      			},
+                      			legend: {
+                      				show: false
+                      			},
+                      			transition: {
+                      				duration: 0
+                      			},
+                      			point: {
+                      				show: false
+                      			},
+                      			tooltip: {
+                      				format: {
+                      					title: function (x) {
+                      						return '';
+                      					}
+                      				}
+                      			},
+                      			axis: {
+                      				y: {
+                      					padding: {
+                      						bottom: 0,
+                      					},
+                      					show: false,
+                      					tick: {
+                      						outer: false
+                      					}
+                      				},
+                      				x: {
+                      					padding: {
+                      						left: 0,
+                      						right: 0
+                      					},
+                      					show: false
+                      				}
+                      			},
+                      			color: {
+                      				pattern: ['#CC9955']
+                      			}
+                      		});
+                      	});
+                      });
+                    </script>
+                  </div>
+                  <div class="col-sm-6 col-lg-6">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="card-value float-right text-red">-1.23%</div>
+                        <h3 class="mb-1">Global Portfolio</h3>
+                        <div class="text-muted">UK ETFs</div>
+                      </div>
+                      <div class="card-chart-bg">
+                        <div id="chart-bg-users-2" style="height: 100%"></div>
+                      </div>
+                    </div>
+                    <script>
+                      require(['c3', 'jquery'], function (c3, $) {
+                      	$(document).ready(function() {
+                      		var chart = c3.generate({
+                      			bindto: '#chart-bg-users-2',
+                      			padding: {
+                      				bottom: -10,
+                      				left: -1,
+                      				right: -1
+                      			},
+                      			data: {
+                      				names: {
+                      					data1: 'Value'
+                      				},
+                      				columns: [
+                      					['data1', 30, 40, 10, 40, 12, 22, 40]
+                      				],
+                      				type: 'area'
+                      			},
+                      			legend: {
+                      				show: false
+                      			},
+                      			transition: {
+                      				duration: 0
+                      			},
+                      			point: {
+                      				show: false
+                      			},
+                      			tooltip: {
+                      				format: { 
+                      					title: function (x) {
+                      						return '';
+                      					}
+                      				}
+                      			},
+                      			axis: {
+                      				y: {
+                      					padding: {
+                      						bottom: 0,
+                      					},
+                      					show: false,
+                      					tick: {
+                      						outer: false
+                      					}
+                      				},
+                      				x: {
+                      					padding: {
+                      						left: 0,
+                      						right: 0
+                      					},
+                      					show: false
+                      				}
+                      			},
+                      			color: {
+                      				pattern: ['#CC9955']
+                      			}
+                      		});
+                      	});
+                      });
+                    </script>
+                  </div>
+                  <div class="col-12">
+                    <div class="card">
+                      <div class="card-header">
+                        <h3 class="card-title">Expediture History</h3>
+                      </div>
+                      <div class="table-responsive">
+                        <table class="table card-table table-vcenter text-nowrap datatable">
+                          <thead>
+                            <tr>
+                              <th class="w-1">Description</th>
+                              <th>Date</th>
+                              <th>Currency</th>
+                              <th>Amount</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td><span class="text-muted">NTUC FP - CHINATOWN PT SINGAPORE</span></td>
+                              <td><span class="text-muted"></span>31 Aug</td>
+                              <td>SGD</td>
+                              <td class="text-red">
+                                -4.40
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><span class="text-muted">AMZNPRIMESG MEMBERSHIP SINGAPORE</span></td>
+                              <td><span class="text-muted"></span>26 Aug</td>
+                              <td>SGD</td>
+                              <td class="text-red">
+                                -2.99
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><span class="text-muted">SHOPEE - SINGAPORE SINGAPORE SG</span></td>
+                              <td><span class="text-muted"></span>25 Aug</td>
+                              <td>SGD</td>
+                              <td class="text-red">
+                                -42.08
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><span class="text-muted">APPLE.COM/BILL</span></td>
+                              <td><span class="text-muted"></span>24 Aug</td>
+                              <td>SGD</td>
+                              <td class="text-red">
+                                -4.02
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><span class="text-muted">GUARDIAN-TANJONG PAGAR SINGAPORE</span></td>
+                              <td><span class="text-muted"></span>19 Aug</td>
+                              <td>SGD</td>
+                              <td class="text-red">
+                                -12.55
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script>
+            require(['jquery'], function () {
+            	$(document).ready(function () {
+            
+            		function setCookie(name,value,days) {
+            			var expires = "";
+            			if (days) {
+            				var date = new Date();
+            				date.setTime(date.getTime() + (days*24*60*60*1000));
+            				expires = "; expires=" + date.toUTCString();
+            			}
+            			document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+            		}
+            
+            		function getCookie(name) {
+            			var nameEQ = name + "=";
+            			var ca = document.cookie.split(';');
+            			for(var i=0;i < ca.length;i++) {
+            				var c = ca[i];
+            				while (c.charAt(0)==' ') c = c.substring(1,c.length);
+            				if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+            			}
+            			return null;
+            		}
+            
+            		if (!getCookie('bottombar-hidden')) {
+            			$('.js-bottombar').show();
+            		}
+            
+            		$('.js-bottombar-close').on('click', function (e) {
+            			$('.js-bottombar').hide();
+            			setCookie('bottombar-hidden', 1, 7);
+            
+            			e.preventDefault();
+            			return false;
+            		});
+            	});
+            });
+          </script>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="row align-items-center flex-row-reverse">
+            <div class="col-auto ml-lg-auto">
+            </div>
+            <div class="col-12 col-lg-auto mt-3 mt-lg-0 text-center">
+              Privacy Policy | ©2019 DBS Bank Ltd | Co. Reg. No. 196800306E
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
